@@ -1,0 +1,32 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.dist/
+.build/
+.env
+.venv/
+venv/
+.env.*
+
+# Unit test / coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+
+# Django/Flask style (not used, but safe)
+instance/
+.webassets-cache
+
+# Linting
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+
+# Alembic
+alembic/versions/
+

@@ -44,7 +44,7 @@ This document converts the project spec in `Readme.md` into an execution plan wi
 1. Confirm runtime prerequisites
    - Node.js version (for Next.js)
    - Python version (for FastAPI)
-   - PostgreSQL availability (local or docker)
+   - PostgreSQL availability (we will use docker)
    - Environment variables strategy
 
 2. Create/confirm backend folder structure (if not present)
