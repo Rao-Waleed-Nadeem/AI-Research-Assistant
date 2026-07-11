@@ -17,7 +17,7 @@ if config.config_file_name is not None:
 import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-from app.db.base import Base
+from app.models import Base
 from app.db.database import settings
 
 target_metadata = Base.metadata
