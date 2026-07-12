@@ -1,10 +1,17 @@
+import os
+import sys
+
 import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from app.main import app
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from app.db.session import get_db
+from app.main import app
 from app.models import Base
+
 
 # Setup SQLite in-memory database for tests
 SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
